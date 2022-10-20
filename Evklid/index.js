@@ -251,38 +251,9 @@ headerInputSearch.addEventListener('keydown', function (event) {
 
 });
 
-function setAriaLabel_footerLabelPersonal(element, stateValue) {
+footerInputPersonal.addEventListener('change', function (event) {
 
-  if (stateValue) {
-    footerLabelPersonal.setAttribute('aria-checked', true);
-    footerLabelPersonal.setAttribute('aria-label', 'Согласие на обработку данных отмечено');
-  } else {
-    footerLabelPersonal.setAttribute('aria-checked', false);
-    footerLabelPersonal.setAttribute('aria-label', 'Согласие на обработку данных не отмечено');
-  }
-
-}
-
-footerLabelPersonal.addEventListener('click', function (event) {
-
-  let stateToSet = !footerInputPersonal.checked;
-  setAriaLabel_footerLabelPersonal(footerInputPersonal, stateToSet);
-
-});
-
-footerLabelPersonal.addEventListener('keydown', function (event) {
-
-  //handle keydown Enter or Space
-  if ((event.keyCode == 13)
-    || (event.keyCode == 32)) {
-
-    //disabling default key action
-    event.preventDefault();
-
-    // //click the label
-    event.target.click();
-    // footerInputPersonal.checked = true;
-    // setAriaLabel_footerLabelPersonal(footerInputPersonal, footerInputPersonal.checked);
-  }
+  //set aria-checked
+  footerLabelPersonal.setAttribute('aria-checked', event.target.checked);
 
 });
