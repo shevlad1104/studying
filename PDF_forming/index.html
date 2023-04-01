@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Создание заявлений на пропуска</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <form action="http://localhost:8080" method="post" class="establish__form flex">
+      <div class="establish__wrap-file establish-wrapping flex">
+        <label id="establish__label-xls" class="establish__label-xls unselectable" tabindex="0"
+          for="establish__input-xls">
+          File:
+        </label>
+        <input type="file" name="establish__input-xls" id="establish__input-xls"
+          class="establish__input-xls establish__input" required>
+      </div>
+
+      <div class="establish__wrap-visit-goal establish-wrapping flex">
+        <label id="establish__label-visit-goal" class="establish__label-visit-goal unselectable" tabindex="0"
+          for="establish__visit-goal">
+          Visit goal:
+        </label>
+        <input type="text" name="establish__visit-goal" class="establish__visit-goal establish__input"
+          value="СПОРТИВНЫЕ СОРЕВНОВАНИЯ" required>
+      </div>
+
+      <div class="establish__wrap-applier-ins establish-wrapping flex">
+        <label id="establish__label-applier-ins" class="establish__label-applier-ins unselectable" tabindex="0"
+          for="establish__applier-insuranse">
+          Applier code:
+        </label>
+        <input type="text" name="establish__applier-insuranse" class="establish__applier-insuranse establish__input"
+          value="081-420-798-51" required>
+      </div>
+
+      <div class="establish__wrap-applier-phone establish-wrapping flex">
+        <label id="establish__label-applier-phone" class="establish__label-applier-phone unselectable" tabindex="0"
+          for="establish__applier-phone">
+          Applier phone +7:
+        </label>
+        <input type="text" name="establish__applier-phone" class="establish__applier-phone establish__input"
+          value="9130477257" required>
+      </div>
+
+      <div class="establish__wrap-applier-company establish-wrapping flex">
+        <label id="establish__label-applier-company" class="establish__label-applier-company unselectable" tabindex="0"
+          for="establish__applier-company">
+          Applier company:
+        </label>
+        <input type="text" name="establish__applier-company" class="establish__applier-company establish__input"
+          value="АНО ФСО МОЛНИЯ" required>
+      </div>
+
+      <div class="establish__wrap-applier-position establish-wrapping flex">
+        <label id="establish__label-applier-position" class="establish__label-applier-position unselectable"
+          tabindex="0" for="establish__applier-position">
+          Applier position:
+        </label>
+        <input type="text" name="establish__applier-position" class="establish__applier-position establish__input"
+          value="ДИРЕКТОР" required>
+      </div>
+
+      <div class="establish__wrap-applier-name establish-wrapping flex">
+        <label id="establish__label-applier-name" class="establish__label-applier-name unselectable" tabindex="0"
+          for="establish__applier-name">
+          Applier name:
+        </label>
+        <input type="text" name="establish__applier-name" class="establish__applier-name establish__input"
+          value="ПРУДКОВ МИХАИЛ ВИКТОРОВИЧ" required>
+      </div>
+
+      <div class="establish__wrap-apply-date establish-wrapping flex">
+        <label id="establish__label-apply-date" class="establish__label-apply-date unselectable" tabindex="0"
+          for="establish__apply-date">
+          Apply date:
+        </label>
+        <input type="date" name="establish__apply-date" class="establish__apply-date establish__input"
+          value="" required>
+      </div>
+
+      <div class="establish__wrap-start-date establish-wrapping flex">
+        <label id="establish__label-start-date" class="establish__label-start-date unselectable" tabindex="0"
+          for="establish__start-date">
+          Start date:
+        </label>
+        <input type="date" name="establish__start-date" class="establish__start-date establish__input"
+          value="" required>
+      </div>
+
+      <div class="establish__wrap-expire-date establish-wrapping flex">
+        <label id="establish__label-expire-date" class="establish__label-expire-date unselectable" tabindex="0"
+          for="establish__expire-date">
+          Expire date:
+        </label>
+        <input type="date" name="establish__expire-date" class="establish__expire-date establish__input"
+          value="" required>
+      </div>
+
+      <div class="establish__wrap-docs-str1 establish-wrapping flex">
+        <label id="establish__label-docs-str1" class="establish__label-docs-str1 unselectable" tabindex="0"
+          for="establish__docs-str1">
+          Docs 1:
+        </label>
+        <input type="text" name="establish__docs-str1" class="establish__docs-str1 establish__input"
+          value="">
+      </div>
+
+      <div class="establish__wrap-create-pdfs-btn flex">
+        <button class="establish__create-pdfs-btn">
+          Create PDFs
+        </button>
+      </div>
+    </form>
+
+    <p class="info__para">
+      Result of creating PDFs
+    </p>
+    <a href="" class="info__download-pdfs-link">You can download PDFs with this link</a>
+    <span class="info__download-timer-span"></span>
+  </div>
+  <script src="/dist/bundle.js"></script>
+  <script type="module" src="/index.js"></script>
+</body>
+
+</html>
